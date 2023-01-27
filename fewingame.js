@@ -1,6 +1,6 @@
 window.addEventListener('load' ,getBal); 
 // const startingminutes=10;
-let time=6;
+let time=30;
 let body=document.getElementById('body');
 let countdown=document.getElementById('countdown');
 let btn=document.getElementsByClassName('btn');
@@ -43,7 +43,7 @@ function updatecountdown()
     time--;
     if(time==0)
     {
-        time=6;
+        time=30;
     }
     // if(time<=5)
     // {
@@ -194,7 +194,7 @@ function greenvalues(value)
     localStorage.setItem('balance',balanceValue);
     if(random%2==0)
     {
-        alert(time);
+     
         setTimeout(()=>{
             // alert("youwon")
             lwvalue=2*value;
@@ -258,7 +258,7 @@ function redvalues(value)
     {
        
         
-        alert(time);
+        
         setTimeout(()=>{
             pop.setAttribute('class','pop');
             display.style=`background:green;`
@@ -348,7 +348,7 @@ function voiletvalues(value)
     }
     else{
         
-           alert(time);
+       
            setTimeout(()=>{
                pop.setAttribute('class','pop');
                if(random%2==0)
