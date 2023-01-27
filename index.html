@@ -1,0 +1,150 @@
+<html>
+
+<head>
+    <title>fewin</title>
+    <link rel="stylesheet" href="fewin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body class="body" id="body">
+    <div class="main" id="main">
+        <div class="topbar">
+            <div class="balance">
+                <p>Available balance : </p>
+                <p id="balance">0</p>
+            </div>
+            <div class="rechargetrend">
+                <div class="recharge">
+                    
+                    <a href="#" onclick="openrecharge()">recharge</a>
+                </div>
+                <div class="trend">
+                    <a href="#">Trend</a>
+                </div>
+            </div>
+        </div>
+        <div class="name">
+            <p>bcone</p>
+
+        </div>
+        <div class="timer">
+            <div class="period">
+
+                <p class="period2">period</p>
+                <p class="number">20220729455</p>
+
+            </div>
+            <div class="countDown">
+                <p class="p1">count Down</p>
+                <P class="p2" id="countdown"></P>
+            </div>
+
+        </div>
+        <div class="input">
+            <div class="color">
+                <div class="green">
+                    <button type="submit" onclick="green()" class="btn" id="gbtn">join green</button>
+                </div>
+                <div class="violet">
+                    <button type="submit" onclick="voilet();" class="btn" id="vbtn">join violet</button>
+                </div>
+                <div class="red">
+                    <button type="submit" onclick="red()" class="btn" id="rbtn">join red</button>
+                </div>
+            </div>
+        </div>
+        <div class="numerical1">
+            <div><BUTTON class="btn">0</BUTTON></div>
+            <div><BUTTON class="btn">1</BUTTON></div>
+            <div><BUTTON class="btn">2</BUTTON></div>
+            <div><BUTTON class="btn">3</BUTTON></div>
+            <div><BUTTON class="btn">4</BUTTON></div>
+
+        </div>
+        <div class="numerical2">
+            <div><BUTTON class="btn">5</BUTTON></div>
+            <div><BUTTON class="btn">6</BUTTON></div>
+            <div><BUTTON class="btn">7</BUTTON></div>
+            <div><BUTTON class="btn">8</BUTTON></div>
+            <div><BUTTON class="btn">9</BUTTON></div>
+
+        </div>
+        <div class="recordname">
+          <p>bcone record</p> 
+        </div>
+        <div class="table">
+            <table id="row">
+                <tr>
+                    <th>period</th>
+                    <th>price</th>
+                    <th>Number</th>
+                    <th>Result</th>
+                </tr>
+            </table>
+        </div>
+        <div id="footer">
+            <div class="home"><p>home</p> </div>
+            <div class="home"><p>win</p></div>
+            <div class="home"><p>search</p></div>
+        </div>
+    </div>
+
+    <!-- <tr id="row" class="row">
+
+                </tr> -->
+
+    <!-- <td>202207</td>
+                    <td>44986</td>
+                    <td>8</td>
+                    <td><div class="result" id="result"></div></td> -->
+
+
+    <!-- <tr>
+                    <td>20220730002</td>
+                    <td>44986</td>
+                    <td>8</td>
+                    <td><div class="result"><p>r</p></div></td>
+                </tr>
+                <tr>
+                    <td>20220730002</td>
+                    <td>44986</td>
+                    <td>8</td>
+                    <td><div class="result"><p>r</p></div></td>
+                </tr> -->
+
+    <div class="pop1" id="pop">
+        <div class="number">
+            <div class="display" id="display">
+                <h2 id="displaynumber"></h2>
+            </div>
+            <p id="displaytext">you won</p>
+            <button type="submit" class="button1" id="button1" onclick="popclose()"><i class="fa fa-times-circle-o"
+                    aria-hidden="true"></i></button>
+        </div>
+    </div>
+    <div class="closedisplay" id="closedisplay">
+
+    </div>
+    <div class="recharge1" id="recharge2" >
+        <label for="">Enter the amount</label>
+        <input type="number" id="rechargevalue">
+        <button type="submit" id="rechargebutton" onclick="updaterecharge()">recharge</button>
+
+    </div>
+    <div class="wrapper2" id="wrapper">
+        <div class="details">
+            <span class="minus">-</span>
+            <span class="number2" id="number2">01</span>
+            <span class="plus">+</span>
+        </div>
+        <button type="submit" id="bet" onclick="updatebet()">ok</button>
+      
+       
+
+    </div>
+ 
+    <script src="fewingame.js"></script>
+
+</body>
+
+</html>
